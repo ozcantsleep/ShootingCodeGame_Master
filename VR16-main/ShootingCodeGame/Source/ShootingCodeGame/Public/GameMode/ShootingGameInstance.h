@@ -108,8 +108,17 @@ public:
 */
 	virtual void OnDestroySessionComplete(FName SessionName, bool bWasSuccessful);
 
-	//---[BlueprintCallable Functions Create]---
+	//---[BlueprintCallable Functions]---
 
 	UFUNCTION(BlueprintCallable, Category = "Network|Test")
 	void StartOnlineGame();
+
+	UFUNCTION(BlueprintCallable, Category = "Network|Test")
+	void FindOnlineGames();
+
+	UFUNCTION(BlueprintCallable, Category = "Network|Test")
+	void JoinOnlineGame();
+
+	UFUNCTION(BlueprintCallable, Category = "Network|Test")
+	void DestroySessionAndLeaveGame();
 };
